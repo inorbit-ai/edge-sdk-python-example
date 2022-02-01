@@ -2,25 +2,18 @@
 A step by step guide for getting your Python programs to communicate with the InOrbit platform 
 
 ### Requirements
-- Node version 16.13.0 or higher - [Node installation instructions](https://nodejs.org/en/)
-- NPM version 8.2.0 or higher - [NPM installation instructions](https://www.npmjs.com/)
+- Python 3.8.10
 - InOrbit account [(it's free to sign up!)](https://control.inorbit.ai/ "InOrbit")
 
 
 ### Steps
 1. Clone this repo
-3. Go to your [InOrbit Console](console.inorbit.ai) and get your API Key
-4. Set an environment variable `INORBIT_API_KEY=<YOUR API KEY>`
-5. Update your RobotID to a unique identifier - *(line 15)*
-6. Update your robot name *(optional)* - *(line 29)*
-7. Run `node index.js`
-8. Log in to the [InOrbit Control Panel](control.inorbit.ai) to see your robot InOrbit
+2. Go to your [InOrbit Console](console.inorbit.ai) and get your API Key
+3. Create virtual environment - `virtualenv venv`
+4. Activate the virtual environment - `source venv/bin/activate`
+5. Install the Edge SDK package - `pip install git+https://github.com/inorbit-ai/edge-sdk-python.git`
+6. Set API key environment variable - `export INORBIT_API_KEY=<YOUR API KEY>`
+7. Run program - `python example.py`
+8. Log in to the [InOrbit Control Panel](control.inorbit.ai) to see your robots InOrbit
 
 ### FAQ
->How do I set an environment variable?
-
-Within the terminal, enter `export INORBIT_API_KEY=your_API_key`
-
->Where do I get my RobotID?
-
-This value is determined by the user and must be unique. 
